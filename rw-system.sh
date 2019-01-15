@@ -185,6 +185,12 @@ if getprop ro.vendor.build.fingerprint |grep -q -i -e xiaomi/wayne -e xiaomi/jas
     setprop persist.imx376_ofilm.light.lux 280
 fi
 
+if getprop ro.vendor.build.fingerprint |grep -iq xiaomi/wayne;then
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+    mount -o bind /mnt/phh/wayne_gdx /system/etc/firmware
+fi
+
 for f in /vendor/lib/mtk-ril.so /vendor/lib64/mtk-ril.so /vendor/lib/libmtk-ril.so /vendor/lib64/libmtk-ril.so;do
     [ ! -f $f ] && continue
     ctxt="$(ls -lZ $f |grep -oE 'u:object_r:[^:]*:s0')"

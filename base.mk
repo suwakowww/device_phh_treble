@@ -101,6 +101,17 @@ PRODUCT_COPY_FILES += \
 	device/phh/treble/files/samsung-9810-floating_feature.xml:system/ph/sam-9810-flo_feat.xml \
 	device/phh/treble/files/mimix3-gpio-keys.kl:system/phh/mimix3-gpio-keys.kl
 
+PRODUCT_COPY_FILES += \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b00:system/phh/wayne_gdx/goodixfp.b00 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b01:system/phh/wayne_gdx/goodixfp.b01 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b02:system/phh/wayne_gdx/goodixfp.b02 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b03:system/phh/wayne_gdx/goodixfp.b03 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b04:system/phh/wayne_gdx/goodixfp.b04 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b05:system/phh/wayne_gdx/goodixfp.b05 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b06:system/phh/wayne_gdx/goodixfp.b06 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.b07:system/phh/wayne_gdx/goodixfp.b07 \
+	device/phh/treble/files/wayne_gdx/goodixfp_wayne.mdt:system/phh/wayne_gdx/goodixfp.mdt
+
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Universal NoCutoutOverlay
